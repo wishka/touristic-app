@@ -1,0 +1,39 @@
+<div class="container-fluid bg-primary px-5 d-none d-lg-block">
+    <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <% if user_signed_in? %>
+                <% else %>
+                    <small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i><%= link_to 'Register', new_user_registration_path, class:"me-3 text-light" %></small>
+                    <small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i><%= link_to 'Login', new_user_session_path, class:"me-3 text-light" %></small>
+                <% end %>
+                <div class="dropdown">
+                    <% if user_signed_in? %>
+                        <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> <%= current_user.email %> </small></a>
+                    <% else %>
+                        <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
+                    <% end %>
+                    <div class="dropdown-menu rounded">
+                        <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                        <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                        <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                        <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                        <% if user_signed_in? %>
+                            <%= button_to "Log Out", destroy_user_session_path, method: :delete , class: "dropdown-item" %>
+                        <% end %>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

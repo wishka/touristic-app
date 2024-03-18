@@ -9,56 +9,99 @@
 <!-- Header Start -->
 <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
-        <h3 class="text-white display-3 mb-4">About Us</h1>
+        <h3 class="text-white display-3 mb-4">Our Blog</h1>
         <ol class="breadcrumb justify-content-center mb-0">
-            <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Pages</a></li>
-            <li class="breadcrumb-item active text-white"><%= link_to 'About', about_path %></li>
+            <li class="breadcrumb-item active text-white">Blog</li>
         </ol>    
     </div>
 </div>
 <!-- Header End -->
 
-<!-- About Start -->
-<div class="container-fluid about py-5">
+<!-- Blog Start -->
+<div class="container-fluid blog py-5">
     <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-5">
-                <div class="h-100" style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
-                    <%= image_tag 'about-img.jpg', class:"img-fluid  w-100 h-100" %>
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Our Blog</h5>
+            <h1 class="mb-4">Popular Travel Blogs</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti deserunt tenetur sapiente atque. Magni non explicabo beatae sit, vel reiciendis consectetur numquam id similique sunt error obcaecati ducimus officia maiores.
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <div class="blog-img-inner">
+                            <%= image_tag 'blog-1.jpg', class:"img-fluid w-100 rounded-top", alt: "Image" %>
+                            <div class="blog-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>28 Jan 2050</small>
+                            <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="fa fa-thumbs-up text-primary me-2"></i>1.7K</a>
+                            <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="fa fa-comments text-primary me-2"></i>1K</a>
+                        </div>
+                    </div>
+                    <div class="blog-content border border-top-0 rounded-bottom p-4">
+                        <p class="mb-3">Posted By: Royal Hamblin </p>
+                        <a href="#" class="h4">Adventures Trip</a>
+                        <p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(images/about-img-1.png);">
-                <h5 class="section-about-title pe-3">About Us</h5>
-                <h1 class="mb-4">Welcome to <span class="text-primary">Travela</span></h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum, doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam assumenda? Id atque iste consectetur. Commodi odit ab saepe!</p>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos voluptatem suscipit neque enim, doloribus ipsum rem eos distinctio, dignissimos nisi saepe nulla? Libero numquam perferendis provident placeat molestiae quia?</p>
-                <div class="row gy-2 gx-4 mb-4">
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <div class="blog-img-inner">
+                            <%= image_tag 'blog-2.jpg', class:"img-fluid w-100 rounded-top", alt: "Image" %>
+                            <div class="blog-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>28 Jan 2050</small>
+                            <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="fa fa-thumbs-up text-primary me-2"></i>1.7K</a>
+                            <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="fa fa-comments text-primary me-2"></i>1K</a>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                    <div class="blog-content border border-top-0 rounded-bottom p-4">
+                        <p class="mb-3">Posted By: Royal Hamblin </p>
+                        <a href="#" class="h4">Adventures Trip</a>
+                        <p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
                     </div>
                 </div>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <div class="blog-img-inner">
+                            <%= image_tag 'blog-3.jpg', class:"img-fluid w-100 rounded-top", alt: "Image" %>
+                            <div class="blog-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>28 Jan 2050</small>
+                            <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="fa fa-thumbs-up text-primary me-2"></i>1.7K</a>
+                            <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="fa fa-comments text-primary me-2"></i>1K</a>
+                        </div>
+                    </div>
+                    <div class="blog-content border border-top-0 rounded-bottom p-4">
+                        <p class="mb-3">Posted By: Royal Hamblin </p>
+                        <a href="#" class="h4">Adventures Trip</a>
+                        <p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- About End -->
+<!-- Blog End -->
 
 <!-- Subscribe Start -->
 <div class="container-fluid subscribe py-5">
@@ -185,3 +228,4 @@
 
 <!-- Back to Top -->
 <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+

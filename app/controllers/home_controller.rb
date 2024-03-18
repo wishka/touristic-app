@@ -8,4 +8,10 @@ class HomeController < ApplicationController
 
   def blog; end
 
+  def destinations; end
+
+  def tours; end
+
+  def contacts; end
+  
 end

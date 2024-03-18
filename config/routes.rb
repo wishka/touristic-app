@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   get 'about', to: 'home#about'
   get 'services', to: 'home#services'
   get 'blog', to: 'home#blog'
+  get 'destinations', to: 'home#destinations'
+  get 'tours', to: 'home#tours'
+  get 'contacts', to: 'home#contacts'
 end
