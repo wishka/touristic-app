@@ -18,7 +18,7 @@
                 <% end %>
                 <div class="dropdown">
                     <% if user_signed_in? %>
-                        <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> <%= current_user.email %> </small></a>
+                        <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> <%= current_user.email %> (<%= current_user.role %>) </small></a>
                     <% else %>
                         <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
                     <% end %>
